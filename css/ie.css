@@ -1,0 +1,13 @@
+/* CSS Document */
+
+body, html {
+	font-size: 13px;
+}
+
+fieldset {
+	font-size: 14px;
+}
+
+#content {
+	padding-top: 15px;
+}

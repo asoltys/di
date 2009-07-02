@@ -1,0 +1,78 @@
+body {
+	background: white;
+}
+
+#dynamic_investigations {
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	top: 100px;
+	text-align: right;
+	background-image: url(../images/footerstrip.jpg);
+	background-repeat:repeat-x;
+}
+	
+#coming_soon {
+	width: 100%;
+	position: absolute;
+	top: 200px;
+}
+
+#coming_soon_main {
+	float: left;
+}
+
+* html #coming_soon_main {
+	position:relative;
+	margin-right: -411px;
+}
+
+#coming_soon_repeat {
+	background-image:url(../images/coming_soon_repeat.jpg);
+	background-repeat:repeat-x;
+	width: 100%;
+	height: 255px;
+}
+
+* html #coming_soon_repeat {
+	margin-right: -411px;
+}
+
+#logo {
+	float: left;
+	padding-right: 15px;
+}
+
+#contact
+{
+	border: 1px solid #17308A;
+	position: absolute;
+	top: 500px;
+	padding: 10px;
+	margin-left: 50px;
+	width: 520px;
+}
+
+#address, #contact_info {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color: #17308A;
+}
+
+#address
+{
+	float: left;
+	padding-right: 30px;
+	position: relative;
+}
+
+#contact_info {
+	margin-top: 27px;
+}
+
+#coming_soon_text {
+	color: #17308A;
+	margin-bottom: 5px;
+	font-size: 16px;
+	font-weight: bold;
+}

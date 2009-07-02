@@ -1,0 +1,69 @@
+h1 {
+	width: 700px;
+	background-image: url("../images/heading_wide.jpg");
+}
+
+input, textarea, select {
+	background: #F9FAFB;
+	color: #17308A;
+	font-family: Verdana, "Trebuchet MS";
+	font-size: 11px;
+}
+
+.left_column {
+	width: 350px;
+	float: left;
+}
+
+.right_column {
+	width: 350px;
+	margin-left: 350px;
+}
+
+label {
+	min-width: 150px;
+	position: static;
+	display: block;
+	float: left;
+}
+
+* html label {
+	width: 200px;
+}
+
+textarea {
+	width: 400px;
+	height: 100px;
+}
+
+.clear {
+	clear:both;
+}
+
+.inputSubmit {
+	font-weight: bold;
+	font-size: 18px;
+	float: right;
+}
+
+fieldset {
+	position: relative; 
+	margin-top:1em; 
+	padding-left: .5em;
+	padding-bottom: .5em;
+	padding-top:.85em; 
+	margin-right: 15px;
+	background: #ddd;
+}
+
+legend {
+	position:absolute; top: -.5em; left: .5em;
+	position: absolute;
+	color: #17308A;
+	font-weight: bold;
+}
+
+label.labelCheckbox {
+	min-width: 200px;
+	width: 200px;
+}
