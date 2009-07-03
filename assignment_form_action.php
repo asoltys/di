@@ -109,8 +109,7 @@
 		$msg .= "======================\n";
 		$msg .= "Video Format: " . $_POST['video_format'] . "\n";
 			
-		//mail($mailto, "Dynamic Investigations Form", $msg);
-		mail('asoltys@gmail.com', "Dynamic Investigations Form", $msg);
+		mail($mailto, "Dynamic Investigations Form", $msg);
 		
 		header("Location: assignment_form_thanks.php");
 	}
