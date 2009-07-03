@@ -1,49 +1,8 @@
 <? require("ssi/header.php"); ?>
-<link rel="stylesheet" type="text/css" href="css/assignment_form.css" />
 
-
-<script language="javascript" type="text/javascript">
-
-Element.observe(window, 'load', function() {
-	$$('input[type=radio],input[type=checkbox]').collect(function(e) { 
-		e.style.background = '#ddd' });
-});
-
-var num_vehicles = 0;
-
-function addVehicle()
-{
-	num_vehicles++;
-	var num_vehicles_field = document.getElementById('num_vehicles');
-	
-	var add_vehicle_link = document.getElementById('add_vehicle');
-	
-	num_vehicles_field.value = num_vehicles;
-	
-	
-	var new_vehicle = document.getElementById('vehicle').cloneNode(true);
-	new_vehicle.id = new_vehicle.id + '_' + num_vehicles;
-	new_vehicle.style.display = "block";
-	new_vehicle.childNodes[1].firstChild.nodeValue = 'Vehicle ' + num_vehicles;
-	var vehicle_inputs = new_vehicle.getElementsByTagName('input');
-	
-	var i = 0;
-	for (i = 0; i < vehicle_inputs.length; i++)
-	{
-		vehicle_inputs[i].name = vehicle_inputs[i].name + '_' + num_vehicles;
-	}
-	
-	vehicle_inputs = new_vehicle.getElementsByTagName('textarea');
-	
-	for (i = 0; i < vehicle_inputs.length; i++)
-	{
-		vehicle_inputs[i].name = vehicle_inputs[i].name + '_' + num_vehicles;
-	}
-	
-	var vehicles_fieldset = document.getElementById('vehicles');
-	vehicles_fieldset.insertBefore(new_vehicle, add_vehicle_link);
-}
-</script>	
+<link href="css/assignment_form.css" rel="stylesheet" type="text/css" />
+<script src="scripts/jquery.js" type="text/javascript"></script>
+<script src="scripts/assignments.js" type="text/javascript"></script>
 
 <h1>Assignment Request Form</h1>
 <div class="form">
@@ -506,9 +465,7 @@ function addVehicle()
 				</div>
 			</fieldset>
 			
-			<br id="add_vehicle" />
-			<a href="#" onclick="javascript: addVehicle(); return false;">Add Vehicle</a>
-			<br /><br />
+			<a id="add_vehicle">Add Vehicle</a>
 		</fieldset>
 		
 		<fieldset>
