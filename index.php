@@ -27,6 +27,16 @@
 		</p>
 
 		<p>
+			<q>We were very successful at trial thanks to you.</q>
+			<cite>-Defence Counsel</cite>
+		</p>
+
+		<p>
+			<q>Your surveillance was crucial in the investigation, nice work</q>
+			<cite>-SIU</cite>
+		</p>
+
+		<p>
 			<q>The second best video I have ever seen; however, the best video that I have seen, the company filmed the wrong person.</q>
 			<cite>-Litigation Support</cite>
 		</p>
